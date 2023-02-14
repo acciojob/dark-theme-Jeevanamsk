@@ -5,9 +5,13 @@
   background-color: black;
   color:white;
 }
-
+#ptag{
+	text-align:center;
+	color:aqua;
+}
 #swap{
-  outline:0;
+    display: block;
+	margin: 0 auto;
 }
 
 .button_night{
