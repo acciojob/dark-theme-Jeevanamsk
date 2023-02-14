@@ -1,16 +1,16 @@
-  function swapTheme() {
-  const app = document.getElementById('app');
-  const swapBtn = document.getElementById('swap');
-  
-  // Toggle "day" and "night" classes of app div
-  app.classList.toggle('day');
-  app.classList.toggle('night');
-  
-  // Toggle "button_day" and "button_night" classes of swap button
-  swapBtn.classList.toggle('button_day');
-  swapBtn.classList.toggle('button_night');
+function swapTheme() {
+  var appDiv = document.getElementById("app");
+  var swapBtn = document.getElementById("swap");
+
+  if (appDiv.classList.contains("day")) {
+    appDiv.classList.remove("day");
+    appDiv.classList.add("night");
+    swapBtn.classList.remove("button_day");
+    swapBtn.classList.add("button_night");
+  } else {
+    appDiv.classList.remove("night");
+    appDiv.classList.add("day");
+    swapBtn.classList.remove("button_night");
+    swapBtn.classList.add("button_day");
+  }
 }
-
-
-
-
