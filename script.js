@@ -8,7 +8,7 @@ function swapTheme() {
   
   // Toggle "button_day" and "button_night" classes of swap button
   swapBtn.classList.toggle('button_day');
-  swapBtn.classList.toggle('button_night');
+  
 }
 
 
